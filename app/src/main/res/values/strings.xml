@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidStudy</string>
+    <string name="marqueen">
+        跑马灯的实现关键代码：
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        然后还得在java代码中选中控件，例如：
+        mtv1.setSelected(true);
+    </string>
+    <string name="marqueen_word">
+        Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.
+    </string>
+    <string name="relife">↑↑↓↓←→←→BABA</string>
+</resources>

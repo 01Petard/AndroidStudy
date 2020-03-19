@@ -9,8 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestDemo.PokerActivity"/>
-        <activity android:name=".TestDemo.Calculator2Activity"></activity>
+        <activity android:name=".ListView.ListViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".TestDemo.PokerActivity" />
+        <activity android:name=".TestDemo.Calculator2Activity" />
         <activity android:name=".TestDemo.Calculator1Activity" />
         <activity android:name=".OtherView.ThirdActivity" />
         <activity android:name=".RelativeLayout.SecondActivity" />
@@ -21,7 +29,8 @@
         <activity android:name=".TestIntentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_START" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.MyCategory" />
             </intent-filter>
         </activity>
@@ -33,11 +42,7 @@
         <activity android:name=".LinearLayout.VerticalActivity" />
         <activity android:name=".LinearLayout.HorizontalActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

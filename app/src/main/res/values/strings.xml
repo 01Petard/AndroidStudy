@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">AndroidStudy</string>
     <string name="marqueen">
         跑马灯的实现关键代码：
@@ -14,4 +14,10 @@
         Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.Made by hzx.
     </string>
     <string name="relife">↑↑↓↓←→←→BABA</string>
+    <string-array name="list">
+        <item android:state_focused="true" >飞行模式</item>
+        <item android:state_focused="true" >重新启动</item>
+        <item android:state_focused="true" >数据网络模式</item>
+
+    </string-array>
 </resources>

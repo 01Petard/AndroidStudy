@@ -1,14 +1,12 @@
-package com.hzxcompany.androidstudy.ListView;
+package com.hzxcompany.androidstudy.AboutAdapter.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
 
+import com.hzxcompany.androidstudy.AboutAdapter.ListView.CustomAdapter;
+import com.hzxcompany.androidstudy.AboutAdapter.Student;
 import com.hzxcompany.androidstudy.R;
 
 import java.util.ArrayList;
@@ -26,6 +24,7 @@ public class ListViewActivity extends AppCompatActivity {
         CustomAdapter adapter=new CustomAdapter(this,getData());
         listView.setAdapter(adapter);
     }
+    //getData()方法最好给一个类，调用方法时直接初始化对象调用
     private List<Student> getData(){
         List<Student> stuList=new ArrayList<>();
         stuList.add(new Student("hzx1",18));

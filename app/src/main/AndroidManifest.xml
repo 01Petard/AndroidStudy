@@ -9,14 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListView.ListViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+        <activity android:name=".AboutAdapter.ListView.ListViewTestActivity"></activity>
+        <activity android:name=".AboutAdapter.GirdView.GirdViewActivity" />
+        <activity android:name=".AboutAdapter.FourthActivity" />
+        <activity android:name=".AboutAdapter.ListView.ListViewActivity" />
         <activity android:name=".TestDemo.PokerActivity" />
         <activity android:name=".TestDemo.Calculator2Activity" />
         <activity android:name=".TestDemo.Calculator1Activity" />
@@ -42,7 +38,11 @@
         <activity android:name=".LinearLayout.VerticalActivity" />
         <activity android:name=".LinearLayout.HorizontalActivity" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

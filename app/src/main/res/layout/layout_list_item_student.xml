@@ -5,10 +5,12 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:text="学生的姓名"
         android:id="@+id/tv_liststu_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:text="学生的年龄"
         android:id="@+id/tv_liststu_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

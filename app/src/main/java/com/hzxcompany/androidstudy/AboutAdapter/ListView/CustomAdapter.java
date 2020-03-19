@@ -1,14 +1,13 @@
-package com.hzxcompany.androidstudy.ListView;
+package com.hzxcompany.androidstudy.AboutAdapter.ListView;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.hzxcompany.androidstudy.AboutAdapter.Student;
 import com.hzxcompany.androidstudy.R;
 
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ public class CustomAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        if(null!=mData){
+        if(null != mData){
             return mData.size();
         }
         return 0;
@@ -31,7 +30,7 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        if(null!= mData&&position<mData.size()){
+        if(null != mData && position < mData.size()){
             return mData.get(position);
         }
         return null;
@@ -47,13 +46,9 @@ public class CustomAdapter extends BaseAdapter {
         if(null==convertView){
             convertView = inflater.inflate(R.layout.layout_list_item_student,null);
         }
-//        ImageView imageView = convertView.findViewById(R.id.iv_1);
-//        TextView tvTitle = convertView.findViewById(R.id.tv_title);
-//        TextView tvTime = convertView.findViewById(R.id.tv_time);
-//        TextView tvContent = convertView.findViewById(R.id.tv_content);
         TextView stuname = convertView.findViewById(R.id.tv_liststu_1);
         TextView stuage = convertView.findViewById(R.id.tv_liststu_2);
-        Student stuInfo=(Student)getItem(position);
+        Student stuInfo = (Student)getItem(position);
         if(stuInfo!=null){
             stuname.setText(stuInfo.getName());
             //stuage.setText(Integer.toString(stuInfo.getAge()));

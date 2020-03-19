@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.hzxcompany.androidstudy.AboutAdapter.FourthActivity;
 import com.hzxcompany.androidstudy.LinearLayout.FirstActivity;
 import com.hzxcompany.androidstudy.OtherView.MarqueenActivity;
 import com.hzxcompany.androidstudy.OtherView.ThirdActivity;
@@ -18,7 +19,7 @@ import com.hzxcompany.androidstudy.TestDemo.Calculator2Activity;
 import com.hzxcompany.androidstudy.TestDemo.PokerActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8;
+    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9;
 //    private  Button mBtnIntent,mBtnMarqueen,mBtnPk,mBtnRadio,mBtnCheck,mBtnImageView;
 
     public MainActivity() {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn6 = findViewById(R.id.btn_main_6);//单选+复选+图片
         mBtn7 = findViewById(R.id.btn_main_7);//隐式Intent
         mBtn8 = findViewById(R.id.btn_main_8);//猜扑克
+        mBtn9 = findViewById(R.id.btn_main_9);//Adapter有关的布局
         setListeners();
     }
 
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn6.setOnClickListener(onClick);
         mBtn7.setOnClickListener(onClick);
         mBtn8.setOnClickListener(onClick);
+        mBtn9.setOnClickListener(onClick);
     }
 
     public void sendMessage(View view) {
@@ -87,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_main_8:
                     intent = new Intent(MainActivity.this, PokerActivity.class);
+                    break;
+                case R.id.btn_main_9:
+                    intent = new Intent(MainActivity.this, FourthActivity.class);
                     break;
                 default:
                     Toast.makeText(MainActivity.this,"转跳时遇到未知错误！",Toast.LENGTH_LONG).show();

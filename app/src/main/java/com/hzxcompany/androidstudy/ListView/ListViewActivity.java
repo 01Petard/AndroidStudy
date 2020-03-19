@@ -28,10 +28,10 @@ public class ListViewActivity extends AppCompatActivity {
     }
     private List<Student> getData(){
         List<Student> stuList=new ArrayList<>();
-        stuList.add(new Student("hzx1","18"));
-        stuList.add(new Student("hzx2","19"));
-        stuList.add(new Student("hzx3","20"));
-        stuList.add(new Student("hzx4","21"));
+        stuList.add(new Student("hzx1",18));
+        stuList.add(new Student("hzx2",19));
+        stuList.add(new Student("hzx3",20));
+        stuList.add(new Student("hzx4",21));
         return stuList;
     }
 

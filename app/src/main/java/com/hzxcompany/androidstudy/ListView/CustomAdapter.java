@@ -56,7 +56,8 @@ public class CustomAdapter extends BaseAdapter {
         Student stuInfo=(Student)getItem(position);
         if(stuInfo!=null){
             stuname.setText(stuInfo.getName());
-            stuage.setText(stuInfo.getAge());
+            //stuage.setText(Integer.toString(stuInfo.getAge()));
+            stuage.setText(String.valueOf(stuInfo.getAge()));
         }
         return  convertView;
 

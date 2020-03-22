@@ -19,7 +19,8 @@
             android:textSize="24sp"
             android:textColor="#000"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_listview"/>
         <TextView
             android:gravity="center"
             android:layout_weight="1"
@@ -27,7 +28,8 @@
             android:textSize="24sp"
             android:textColor="#000"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_listview" />
         <TextView
             android:gravity="center"
             android:layout_weight="1"
@@ -35,7 +37,8 @@
             android:textSize="24sp"
             android:textColor="#000"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_listview" />
     </LinearLayout>
 
     <ListView

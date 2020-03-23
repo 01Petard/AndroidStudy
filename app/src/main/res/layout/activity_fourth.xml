@@ -26,5 +26,11 @@
         android:layout_height="wrap_content"
         android:text="GirdView的Demo"
         android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_fou_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="好友列表"
+        android:textAllCaps="false" />
 
 </LinearLayout>

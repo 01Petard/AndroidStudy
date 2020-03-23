@@ -68,6 +68,12 @@
         android:layout_height="wrap_content"
         android:text="Adapter有关的学习"
         android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_main_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="好友列表"
+        android:textAllCaps="false" />
 
 
 

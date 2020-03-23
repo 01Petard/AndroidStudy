@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.hzxcompany.androidstudy.AboutAdapter.GirdView.GirdViewActivity;
 import com.hzxcompany.androidstudy.AboutAdapter.ListView.ListViewActivity;
 import com.hzxcompany.androidstudy.AboutAdapter.ListView.ListViewTestActivity;
+import com.hzxcompany.androidstudy.AboutAdapter.SimpleAdapter.FriendList;
 import com.hzxcompany.androidstudy.R;
 
 public class FourthActivity extends AppCompatActivity {
@@ -22,6 +23,7 @@ public class FourthActivity extends AppCompatActivity {
         Button mBtn1 = findViewById(R.id.btn_fou_1);
         Button mBtn2 = findViewById(R.id.btn_fou_2);
         Button mBtn3 = findViewById(R.id.btn_fou_3);
+        Button mBtn4 = findViewById(R.id.btn_fou_4);
         mBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +42,14 @@ public class FourthActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FourthActivity.this, GirdViewActivity.class);
+                startActivity(intent);
+            }
+
+        });
+        mBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FourthActivity.this, FriendList.class);
                 startActivity(intent);
             }
 

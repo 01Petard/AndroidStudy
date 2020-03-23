@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutAdapter.ListView.ListViewTestActivity"></activity>
+        <activity android:name=".FriendListDemo.FriendListTest"></activity>
+        <activity android:name=".AboutAdapter.SimpleAdapter.FriendList" />
+        <activity android:name=".AboutAdapter.ListView.ListViewTestActivity" />
         <activity android:name=".AboutAdapter.GirdView.GirdViewActivity" />
         <activity android:name=".AboutAdapter.FourthActivity" />
         <activity android:name=".AboutAdapter.ListView.ListViewActivity" />

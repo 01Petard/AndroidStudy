@@ -2,9 +2,9 @@ package com.hzxcompany.androidstudy.FriendListDemo;
 
 import java.util.ArrayList;
 
-public class FriendInf {
+public class FriendDao {
     private ArrayList<Friend> friends;
-    public FriendInf(){
+    public FriendDao(){
         friends = new ArrayList<Friend>();
         for (int i = 0; i <= 100; i++) {
             if (i % 2 == 0) {

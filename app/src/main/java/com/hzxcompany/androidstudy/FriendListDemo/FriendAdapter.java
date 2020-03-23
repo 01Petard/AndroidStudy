@@ -45,11 +45,10 @@ public class FriendAdapter extends BaseAdapter {
         ViewHolder holder = new ViewHolder();
         if(convertView==null){
             convertView = inflater.inflate(R.layout.layout_friend_list_test_item, null);
-            holder = new ViewHolder();
-            holder.tvId = (TextView) convertView.findViewById(R.id.item_id);
-            holder.tvName = (TextView) convertView.findViewById(R.id.item_name);
-            holder.tvSex = (TextView) convertView.findViewById(R.id.item_sex);
-            holder.tvPhone = (TextView) convertView.findViewById(R.id.item_phone);
+            holder.tvId = convertView.findViewById(R.id.item_id);
+            holder.tvName = convertView.findViewById(R.id.item_name);
+            holder.tvSex = convertView.findViewById(R.id.item_sex);
+            holder.tvPhone = convertView.findViewById(R.id.item_phone);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();

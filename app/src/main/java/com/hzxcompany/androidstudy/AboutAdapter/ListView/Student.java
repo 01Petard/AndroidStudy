@@ -1,4 +1,4 @@
-package com.hzxcompany.androidstudy.AboutAdapter;
+package com.hzxcompany.androidstudy.AboutAdapter.ListView;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,11 +5,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.hzxcompany.androidstudy.AboutAdapter.Student;
 import com.hzxcompany.androidstudy.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ListViewTestActivity extends AppCompatActivity {
 

@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.hzxcompany.androidstudy.AboutAdapter.ListView.CustomAdapter;
-import com.hzxcompany.androidstudy.AboutAdapter.Student;
 import com.hzxcompany.androidstudy.R;
 
 import java.util.ArrayList;

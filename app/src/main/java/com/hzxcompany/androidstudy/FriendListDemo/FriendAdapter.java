@@ -1,10 +1,12 @@
 package com.hzxcompany.androidstudy.FriendListDemo;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hzxcompany.androidstudy.R;
@@ -45,6 +47,7 @@ public class FriendAdapter extends BaseAdapter {
         ViewHolder holder = new ViewHolder();
         if(convertView==null){
             convertView = inflater.inflate(R.layout.layout_friend_list_test_item, null);
+            holder.iv = convertView.findViewById(R.id.item_img);
             holder.tvId = convertView.findViewById(R.id.item_id);
             holder.tvName = convertView.findViewById(R.id.item_name);
             holder.tvSex = convertView.findViewById(R.id.item_sex);
@@ -56,6 +59,7 @@ public class FriendAdapter extends BaseAdapter {
         //获取数据
         Friend friend = friends.get(position);
         // 将数据绑定到item界面上
+        holder.iv.setImageResource(friend.getHead());
         holder.tvId.setText("ID:"+friend.getId() + "");
         holder.tvName.setText("姓名:"+friend.getName());
         holder.tvSex.setText("性别:"+friend.getSex());
@@ -63,6 +67,7 @@ public class FriendAdapter extends BaseAdapter {
         return convertView;
     }
     class ViewHolder {
+        private ImageView iv;
         private TextView tvId;
         private TextView tvName;
         private TextView tvSex;

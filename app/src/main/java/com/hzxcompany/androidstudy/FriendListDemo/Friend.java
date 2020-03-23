@@ -4,10 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Friend {
+    private int head;
     private int id;
     private String name;
     private String sex;
     private String phone;
+
+    public int getHead() {
+        return head;
+    }
+
+    public void setHead(int head) {
+        this.head = head;
+    }
 
     public int getId() {
         return id;
@@ -44,7 +53,8 @@ public class Friend {
     public Friend() {
     }
 
-    public Friend(int id, String name, String sex, String phone) {
+    public Friend(int head,int id, String name, String sex, String phone) {
+        this.head = head;
         this.id = id;
         this.name = name;
         this.sex = sex;

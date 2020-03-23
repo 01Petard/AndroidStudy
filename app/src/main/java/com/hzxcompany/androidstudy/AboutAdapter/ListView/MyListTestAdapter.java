@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.hzxcompany.androidstudy.AboutAdapter.Student;
 import com.hzxcompany.androidstudy.R;
 
 import java.util.ArrayList;

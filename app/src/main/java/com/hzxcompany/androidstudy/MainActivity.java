@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hzxcompany.androidstudy.AboutAdapter.FourthActivity;
+import com.hzxcompany.androidstudy.DialogDemo.FifthActivity;
 import com.hzxcompany.androidstudy.FriendListDemo.FriendListTest;
 import com.hzxcompany.androidstudy.LinearLayout.FirstActivity;
 import com.hzxcompany.androidstudy.OtherView.MarqueenActivity;
@@ -20,7 +21,7 @@ import com.hzxcompany.androidstudy.TestDemo.Calculator2Activity;
 import com.hzxcompany.androidstudy.TestDemo.PokerActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10;
+    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11;
 //    private  Button mBtnIntent,mBtnMarqueen,mBtnPk,mBtnRadio,mBtnCheck,mBtnImageView;
 
     public MainActivity() {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn8 = findViewById(R.id.btn_main_8);//猜扑克
         mBtn9 = findViewById(R.id.btn_main_9);//Adapter有关的布局
         mBtn10 = findViewById(R.id.btn_main_10);//好友列表
+        mBtn11 = findViewById(R.id.btn_main_11);//对话框
         setListeners();
     }
 
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn8.setOnClickListener(onClick);
         mBtn9.setOnClickListener(onClick);
         mBtn10.setOnClickListener(onClick);
+        mBtn11.setOnClickListener(onClick);
     }
 
     public void sendMessage(View view) {
@@ -99,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_main_10:
                     intent = new Intent(MainActivity.this, FriendListTest.class);
+                    break;
+                case R.id.btn_main_11:
+                    intent = new Intent(MainActivity.this, FifthActivity.class);
                     break;
                 default:
                     Toast.makeText(MainActivity.this,"转跳时遇到未知错误！",Toast.LENGTH_LONG).show();

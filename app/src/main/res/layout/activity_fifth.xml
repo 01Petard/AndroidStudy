@@ -9,6 +9,12 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/btn_fif_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="合集"/>
+    <Button
         android:id="@+id/btn_fif_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,5 +32,11 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="自定义对话框"/>
+    <Button
+        android:id="@+id/btn_fif_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="单选对话框"/>
 
 </LinearLayout>

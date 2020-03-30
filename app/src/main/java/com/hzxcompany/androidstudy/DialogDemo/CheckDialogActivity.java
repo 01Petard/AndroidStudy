@@ -15,7 +15,7 @@ import com.hzxcompany.androidstudy.R;
 public class CheckDialogActivity extends AppCompatActivity {
 
     private Button mBtnCheck;
-    private String[] lan = {"C","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP","Java","Python","JavaScript","PHP"};
+    private String[] lan = {"C","C#","C++","Java","Python","JavaScript","PHP","Ruby","Perl","Pascal"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class CheckDialogActivity extends AppCompatActivity {
                         if(isChecked){
                             Toast.makeText(CheckDialogActivity.this, "你会"+lan[which], Toast.LENGTH_SHORT).show();
                         }
+
                     }
                 });
                 builder.create().show();

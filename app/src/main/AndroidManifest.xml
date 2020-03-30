@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DialogDemo.CustomeDialogActivity"></activity>
+        <activity android:name=".DialogDemo.AllAlertDialogActivity"></activity>
+        <activity android:name=".DialogDemo.RadioDialogActivity" />
+        <activity android:name=".Fragment.ContainerActivity" />
+        <activity android:name=".DialogDemo.CustomeDialogActivity" />
         <activity android:name=".DialogDemo.CheckDialogActivity" />
         <activity android:name=".DialogDemo.ChoicesDialogActivity" />
         <activity android:name=".DialogDemo.FifthActivity" />

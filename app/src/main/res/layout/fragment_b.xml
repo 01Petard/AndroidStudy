@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="我是BFragment"
-        android:textColor="#000"
+        android:textColor="#ff0000"
         android:textSize="20sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:alpha="0.5"/>
 </LinearLayout>

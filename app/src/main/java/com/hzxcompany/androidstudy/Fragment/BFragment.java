@@ -25,8 +25,6 @@ public class BFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         mTvTitle = view.findViewById(R.id.tv_title);
-        
     }
 }

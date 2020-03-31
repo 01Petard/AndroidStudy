@@ -57,14 +57,12 @@ public class CustomeDialogActivity extends AppCompatActivity {
                         String email = mEd_email.getText().toString();
                         Toast.makeText(CustomeDialogActivity.this, "用户名：" + username + ",密码：" + password +  "\n性别："+sex+"，电话号码：" + phone +"\n电子邮箱：" + email, Toast.LENGTH_LONG).show();
                     }
-                });
-                builder.setNegativeButton("取消注册", new DialogInterface.OnClickListener() {
+                }).setNegativeButton("取消注册", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(CustomeDialogActivity.this, "你取消了注册", Toast.LENGTH_LONG).show();
                     }
-                });
-                builder.create().show();
+                }).setCancelable(false).show();
             }
         });
     }

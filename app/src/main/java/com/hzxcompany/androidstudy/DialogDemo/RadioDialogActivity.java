@@ -28,7 +28,8 @@ public class RadioDialogActivity extends AppCompatActivity {
                 builder.setSingleChoiceItems(animal, -1, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(RadioDialogActivity.this, "你会"+animal[which], Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RadioDialogActivity.this, "你喜欢"+animal[which], Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
                     }
                 });
                 builder.create().show();

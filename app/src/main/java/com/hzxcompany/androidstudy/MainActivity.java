@@ -16,13 +16,14 @@ import com.hzxcompany.androidstudy.FriendListDemo.FriendListTest;
 import com.hzxcompany.androidstudy.LinearLayout.FirstActivity;
 import com.hzxcompany.androidstudy.OtherView.MarqueenActivity;
 import com.hzxcompany.androidstudy.OtherView.ThirdActivity;
+import com.hzxcompany.androidstudy.ProgressBar.ProgressActivity;
 import com.hzxcompany.androidstudy.RelativeLayout.SecondActivity;
 import com.hzxcompany.androidstudy.TestDemo.Calculator1Activity;
 import com.hzxcompany.androidstudy.TestDemo.Calculator2Activity;
 import com.hzxcompany.androidstudy.TestDemo.PokerActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11,mBtn12;
+    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11,mBtn12,mBtn13;
 //    private  Button mBtnIntent,mBtnMarqueen,mBtnPk,mBtnRadio,mBtnCheck,mBtnImageView;
 
     public MainActivity() {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn10 = findViewById(R.id.btn_main_10);//好友列表
         mBtn11 = findViewById(R.id.btn_main_11);//对话框
         mBtn12 = findViewById(R.id.btn_main_12);//Fragment演示
+        mBtn13 = findViewById(R.id.btn_main_13);//ProgressBar和ProgressDialog
         setListeners();
     }
 
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn10.setOnClickListener(onClick);
         mBtn11.setOnClickListener(onClick);
         mBtn12.setOnClickListener(onClick);
+        mBtn13.setOnClickListener(onClick);
     }
 
     public void sendMessage(View view) {
@@ -112,7 +115,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_main_12:
                     intent = new Intent(MainActivity.this, ContainerActivity.class);
                     break;
-
+                case R.id.btn_main_13:
+                    intent = new Intent(MainActivity.this, ProgressActivity.class);
+                    break;
                 default:
                     Toast.makeText(MainActivity.this,"转跳时遇到未知错误！",Toast.LENGTH_LONG).show();
                     break;

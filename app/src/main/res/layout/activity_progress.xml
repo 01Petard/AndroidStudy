@@ -28,6 +28,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="模拟进度"/>
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置进度"/>
 
     <ProgressBar
         android:id="@+id/pb3"
@@ -41,19 +46,25 @@
         android:id="@+id/btn_progress_dialog1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="滚动ProgressDialog"
+        android:text="滚动加载条ProgressDialog"
         android:textAllCaps="false"/>
     <Button
         android:id="@+id/btn_progress_dialog2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="水平长条ProgressDialog"
+        android:text="水平加载条ProgressDialog"
         android:textAllCaps="false"/>
     <Button
         android:id="@+id/btn_progress_dialog3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="自定义滚动ProgressDialog"
+        android:text="自定义滚动加载条ProgressDialog"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回MainActivity"
         android:textAllCaps="false"/>
 
 </LinearLayout>

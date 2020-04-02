@@ -40,14 +40,13 @@ public class ProgressActivity extends AppCompatActivity {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         mBtnReturn = findViewById(R.id.btn_return);
         mBtnStart = findViewById(R.id.btn_start);
-
+        mBtnRestart = findViewById(R.id.btn_restart);
         mBtnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 handler.sendEmptyMessage(0);
             }
         });
-        mBtnRestart = findViewById(R.id.btn_restart);
         mBtnRestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

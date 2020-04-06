@@ -88,7 +88,7 @@ public class AllAlertDialogActivity extends AppCompatActivity {
                 builder_radio.setSingleChoiceItems(animal, -1, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(AllAlertDialogActivity.this, "你会"+animal[which], Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AllAlertDialogActivity.this, "你喜欢"+animal[which], Toast.LENGTH_SHORT).show();
                     }
                 });
                 builder_radio.create().show();

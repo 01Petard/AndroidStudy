@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".IntentDemo.SixthActivity"></activity>
+        <activity android:name=".IntentDemo.IntentResearch_2" />
+        <activity android:name=".IntentDemo.IntentResearch_1" />
         <activity android:name=".ProgressBar.ProgressActivity" />
         <activity android:name=".TestDemo.LogInActivity" />
         <activity android:name=".DialogDemo.AllAlertDialogActivity" />
@@ -33,7 +36,7 @@
         <activity android:name=".OtherView.ImageViewActivity" />
         <activity android:name=".OtherView.RadioButtonActivity" />
         <activity android:name=".OtherView.CheckBoxActivity" />
-        <activity android:name=".TestIntentActivity">
+        <activity android:name=".IntentDemo.TestIntentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_START" />
 

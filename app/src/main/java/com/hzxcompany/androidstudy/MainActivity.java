@@ -13,6 +13,7 @@ import com.hzxcompany.androidstudy.AboutAdapter.FourthActivity;
 import com.hzxcompany.androidstudy.DialogDemo.FifthActivity;
 import com.hzxcompany.androidstudy.Fragment.ContainerActivity;
 import com.hzxcompany.androidstudy.FriendListDemo.FriendListTest;
+import com.hzxcompany.androidstudy.IntentDemo.SixthActivity;
 import com.hzxcompany.androidstudy.LinearLayout.FirstActivity;
 import com.hzxcompany.androidstudy.OtherView.MarqueenActivity;
 import com.hzxcompany.androidstudy.OtherView.ThirdActivity;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn4 = findViewById(R.id.btn_main_4);//计算器（网格）
         mBtn5 = findViewById(R.id.btn_main_5);//跑马灯
         mBtn6 = findViewById(R.id.btn_main_6);//单选+复选+图片
-        mBtn7 = findViewById(R.id.btn_main_7);//隐式Intent
+        mBtn7 = findViewById(R.id.btn_main_7);//Intent
         mBtn8 = findViewById(R.id.btn_main_8);//猜扑克
         mBtn9 = findViewById(R.id.btn_main_9);//Adapter有关的布局
         mBtn10 = findViewById(R.id.btn_main_10);//好友列表
@@ -94,11 +95,11 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, ThirdActivity.class);
                     break;
                 case R.id.btn_main_7:
-                    intent = new Intent("android.intent.action.ACTION_START");
-                    intent.addCategory("android.intent.category.MyCategory");
-                    String data = "从MainActivity转跳到TestIntentActivity了";
-                    intent.putExtra("转跳1", data);
-//                    intent = new Intent(MainActivity.this, TestIntentActivity.class);
+//                    intent = new Intent("android.intent.action.ACTION_START");
+//                    intent.addCategory("android.intent.category.MyCategory");
+//                    String data = "从MainActivity转跳到TestIntentActivity了";
+//                    intent.putExtra("转跳1", data);
+                    intent = new Intent(MainActivity.this, SixthActivity.class);
                     break;
                 case R.id.btn_main_8:
                     intent = new Intent(MainActivity.this, PokerActivity.class);

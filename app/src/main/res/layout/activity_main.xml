@@ -59,7 +59,7 @@
             android:id="@+id/btn_main_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="隐式Intent的功能"
+            android:text="Intent和Activity的生命周期"
             android:textAllCaps="false" />
         <Button
             android:id="@+id/btn_main_8"

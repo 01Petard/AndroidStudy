@@ -1,4 +1,4 @@
-package com.hzxcompany.androidstudy;
+package com.hzxcompany.androidstudy.IntentDemo;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,8 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
-import java.io.File;
+
+import com.hzxcompany.androidstudy.R;
 
 public class TestIntentActivity extends AppCompatActivity {
     private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11,mBtn12;
@@ -37,9 +37,11 @@ public class TestIntentActivity extends AppCompatActivity {
         mBtn10 = this.findViewById(R.id.btn_intent_10);
         mBtn11 = this.findViewById(R.id.btn_intent_11);
         mBtn12 = this.findViewById(R.id.btn_intent_12);
+        //接收Intent信息
         Intent intent = this.getIntent();
         String data = intent.getStringExtra("转跳1");
         Log.d("TestIntentActivity", data);
+
         mBtn1.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent("android.intent.action.VIEW");

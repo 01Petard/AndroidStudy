@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.hzxcompany.androidstudy.AboutAdapter.FourthActivity;
 import com.hzxcompany.androidstudy.BroadcastReceiverStudy.ClockActivity;
 import com.hzxcompany.androidstudy.DialogDemo.FifthActivity;
-import com.hzxcompany.androidstudy.Fragment.ContainerActivity;
 import com.hzxcompany.androidstudy.Fragment.SeventhActivity;
 import com.hzxcompany.androidstudy.FriendListDemo.FriendListTest;
 import com.hzxcompany.androidstudy.IntentDemo.SixthActivity;
@@ -25,7 +24,7 @@ import com.hzxcompany.androidstudy.TestDemo.Calculator1Activity;
 import com.hzxcompany.androidstudy.TestDemo.Calculator2Activity;
 import com.hzxcompany.androidstudy.TestDemo.PokerActivity;
 
-import ServiceDemo.ServiceGuanli;
+import com.hzxcompany.androidstudy.ServiceDemo.ServiceGuanli;
 
 public class MainActivity extends AppCompatActivity {
     private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11,mBtn12,mBtn13,mBtn14,mBtn15;

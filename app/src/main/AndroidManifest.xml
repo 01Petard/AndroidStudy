@@ -14,12 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="ServiceDemo.FullDownload.DownloadActivity"></activity>
-        <activity android:name="ServiceDemo.AsyncDemo.DownloadTaskTest" />
-        <activity android:name="ServiceDemo.AsyncDemo.TestHandlerActivity" />
-        <activity android:name="ServiceDemo.StartAndBind.BindActivity" />
-        <activity android:name="ServiceDemo.StartAndBind.StartActivity" />
-        <activity android:name="ServiceDemo.ServiceGuanli" />
+        <activity android:name="com.hzxcompany.androidstudy.ServiceDemo.FullDownload.DownloadActivity"></activity>
+        <activity android:name="com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo.DownloadTaskTest" />
+        <activity android:name="com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo.TestHandlerActivity" />
+        <activity android:name="com.hzxcompany.androidstudy.ServiceDemo.StartAndBind.BindActivity" />
+        <activity android:name="com.hzxcompany.androidstudy.ServiceDemo.StartAndBind.StartActivity" />
+        <activity android:name="com.hzxcompany.androidstudy.ServiceDemo.ServiceGuanli" />
         <activity android:name=".BroadcastReceiverStudy.ShowActivity" />
         <activity android:name=".BroadcastReceiverStudy.ClockActivity" />
         <activity android:name=".Fragment.SeventhActivity" />
@@ -85,15 +85,15 @@
         </receiver>
 
         <service
-            android:name="ServiceDemo.FullDownload.DowloadService"
+            android:name="com.hzxcompany.androidstudy.ServiceDemo.FullDownload.DowloadService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="ServiceDemo.StartAndBind.BindService"
+            android:name="com.hzxcompany.androidstudy.ServiceDemo.StartAndBind.BindService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="ServiceDemo.StartAndBind.StartService"
+            android:name="com.hzxcompany.androidstudy.ServiceDemo.StartAndBind.StartService"
             android:enabled="true"
             android:exported="true" />
     </application>

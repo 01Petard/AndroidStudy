@@ -1,18 +1,7 @@
-package ServiceDemo.AsyncDemo;
+package com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ProgressDialog;
-import android.content.Context;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.util.Log;
-import android.widget.ProgressBar;
-import android.widget.Toast;
-
-import com.hzxcompany.androidstudy.R;
-
-import ServiceDemo.ServiceGuanli;
 
 public class DownloadTaskTest extends AsyncTask<Void,Integer,Boolean> {
     private static final String TAG = "DownloadTask";

@@ -1,4 +1,4 @@
-package ServiceDemo.AsyncDemo;
+package com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

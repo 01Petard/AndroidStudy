@@ -1,4 +1,4 @@
-package ServiceDemo.StartAndBind;
+package com.hzxcompany.androidstudy.ServiceDemo.StartAndBind;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package ServiceDemo;
+package com.hzxcompany.androidstudy.ServiceDemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,12 +9,11 @@ import android.widget.Button;
 
 import com.hzxcompany.androidstudy.R;
 
-import ServiceDemo.AsyncDemo.DownloadTaskTest;
-import ServiceDemo.AsyncDemo.TestHandlerActivity;
-import ServiceDemo.FullDownload.DownloadActivity;
-import ServiceDemo.StartAndBind.BindActivity;
-import ServiceDemo.StartAndBind.StartActivity;
-import ServiceDemo.StartAndBind.StartService;
+import com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo.DownloadTaskTest;
+import com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo.TestHandlerActivity;
+import com.hzxcompany.androidstudy.ServiceDemo.FullDownload.DownloadActivity;
+import com.hzxcompany.androidstudy.ServiceDemo.StartAndBind.BindActivity;
+import com.hzxcompany.androidstudy.ServiceDemo.StartAndBind.StartActivity;
 
 public class ServiceGuanli extends AppCompatActivity {
 
@@ -51,8 +50,6 @@ public class ServiceGuanli extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(ServiceGuanli.this, DownloadTask.class);
-//                startActivity(intent);
                 DownloadTaskTest task = new DownloadTaskTest();
                 task.execute();
             }

@@ -1,4 +1,4 @@
-package ServiceDemo.FullDownload;
+package com.hzxcompany.androidstudy.ServiceDemo.FullDownload;
 
 public interface DownloadListener {
 

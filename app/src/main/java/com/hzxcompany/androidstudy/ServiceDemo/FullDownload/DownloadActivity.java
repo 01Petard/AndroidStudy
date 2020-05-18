@@ -1,9 +1,8 @@
-package ServiceDemo.FullDownload;
+package com.hzxcompany.androidstudy.ServiceDemo.FullDownload;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContentResolverCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
@@ -17,7 +16,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.hzxcompany.androidstudy.MainActivity;
 import com.hzxcompany.androidstudy.R;
 
 public class DownloadActivity extends AppCompatActivity implements View.OnClickListener{

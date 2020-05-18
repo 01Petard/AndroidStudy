@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ServiceDemo.AsyncDemo.TestHandlerActivity">
+    tools:context="com.hzxcompany.androidstudy.ServiceDemo.AsyncDemo.TestHandlerActivity">
 
     <TextView
         android:id="@+id/textView"

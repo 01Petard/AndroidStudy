@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hzxcompany.androidstudy">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
 
     <application
         android:allowBackup="true"
@@ -11,18 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BroadcastReceiverStudy.ShowActivity"/>
-
-        <receiver
-            android:name=".BroadcastReceiverStudy.AlarmReceiver"
-            android:enabled="true"
-            android:exported="true"
-            android:process=":remote">
-            <intent-filter>
-                <action android:name="com.hzxcompany.androidstudy.WAKE_UP" />
-            </intent-filter>
-        </receiver>
-
+        <activity android:name="ServiceDemo.FullDownload.DownloadActivity"></activity>
+        <activity android:name="ServiceDemo.AsyncDemo.DownloadTaskTest" />
+        <activity android:name="ServiceDemo.AsyncDemo.TestHandlerActivity" />
+        <activity android:name="ServiceDemo.StartAndBind.BindActivity" />
+        <activity android:name="ServiceDemo.StartAndBind.StartActivity" />
+        <activity android:name="ServiceDemo.ServiceGuanli" />
+        <activity android:name=".BroadcastReceiverStudy.ShowActivity" />
         <activity android:name=".BroadcastReceiverStudy.ClockActivity" />
         <activity android:name=".Fragment.SeventhActivity" />
         <activity android:name=".Fragment.TestFragmentActivity" />
@@ -75,6 +73,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".BroadcastReceiverStudy.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.hzxcompany.androidstudy.WAKE_UP" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ServiceDemo.FullDownload.DowloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="ServiceDemo.StartAndBind.BindService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="ServiceDemo.StartAndBind.StartService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
 </manifest>

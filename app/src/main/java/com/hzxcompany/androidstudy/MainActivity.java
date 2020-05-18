@@ -25,8 +25,10 @@ import com.hzxcompany.androidstudy.TestDemo.Calculator1Activity;
 import com.hzxcompany.androidstudy.TestDemo.Calculator2Activity;
 import com.hzxcompany.androidstudy.TestDemo.PokerActivity;
 
+import ServiceDemo.ServiceGuanli;
+
 public class MainActivity extends AppCompatActivity {
-    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11,mBtn12,mBtn13,mBtn14;
+    private Button mBtn1,mBtn2,mBtn3,mBtn4,mBtn5,mBtn6,mBtn7,mBtn8,mBtn9,mBtn10,mBtn11,mBtn12,mBtn13,mBtn14,mBtn15;
 //    private  Button mBtnIntent,mBtnMarqueen,mBtnPk,mBtnRadio,mBtnCheck,mBtnImageView;
 
     public MainActivity() {
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn12 = findViewById(R.id.btn_main_12);//Fragment演示
         mBtn13 = findViewById(R.id.btn_main_13);//ProgressBar和ProgressDialog
         mBtn14 = findViewById(R.id.btn_main_14);//闹钟
+        mBtn15 = findViewById(R.id.btn_main_15);//服务
         setListeners();
     }
 
@@ -70,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn12.setOnClickListener(onClick);
         mBtn13.setOnClickListener(onClick);
         mBtn14.setOnClickListener(onClick);
+        mBtn15.setOnClickListener(onClick);
     }
 
     public void sendMessage(View view) {
@@ -125,6 +129,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_main_14:
                     intent = new Intent(MainActivity.this, ClockActivity.class);
+                    break;
+                case R.id.btn_main_15:
+                    intent = new Intent(MainActivity.this, ServiceGuanli.class);
                     break;
                 default:
                     Toast.makeText(MainActivity.this,"转跳时遇到未知错误！",Toast.LENGTH_LONG).show();

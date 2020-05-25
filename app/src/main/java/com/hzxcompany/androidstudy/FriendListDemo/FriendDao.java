@@ -3,18 +3,25 @@ package com.hzxcompany.androidstudy.FriendListDemo;
 import com.hzxcompany.androidstudy.R;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class FriendDao {
     private ArrayList<Friend> friends;
+
     public FriendDao(){
         friends = new ArrayList<>();
+        Random r = new Random();
         for (int i = 0; i < 10; i++) {
+            String phone1 = String.valueOf(r.nextInt(100)+100);
+            String phone2 = String.valueOf(r.nextInt(1000000000));
+            String phone = phone1+phone2;
             if (i % 2 == 0) {
-                friends.add(new Friend(R.mipmap.friend_icon,String.valueOf(i+1),"张小" + i+1, "女", "66"+i));
+                friends.add(new Friend(R.mipmap.friend_icon,String.valueOf(r.nextInt(10000)),"张" + r.nextInt(100),"男",phone));
             } else {
-                friends.add(new Friend(R.mipmap.friend_icon,String.valueOf(i+1),"李小" + i+1, "男", "55"+i));
+                friends.add(new Friend(R.mipmap.friend_icon,String.valueOf(r.nextInt(10000)),"李" + r.nextInt(100),"女",phone));
             }
         }
+        friends.set(2,new Friend(String.valueOf(r.nextInt(10000)),"黄泽校","男","13248684099"));
     }
     /**
      * 查询所有的好友

@@ -13,7 +13,8 @@
             android:id="@+id/item_img"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@mipmap/friend_icon" />
+            android:src="@mipmap/friend_icon"
+            android:layout_marginLeft="10dp"/>
 
         <LinearLayout
             android:layout_marginLeft="20dp"
@@ -27,7 +28,8 @@
                 android:layout_height="wrap_content"
                 android:text="学号"
                 android:textColor="#000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"/>
 
             <TextView
                 android:id="@+id/item_sex"
@@ -35,7 +37,9 @@
                 android:layout_height="wrap_content"
                 android:text="性别"
                 android:textColor="#000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -46,7 +50,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="0dp"
-        android:layout_marginRight="113dp"
+        android:layout_marginRight="80dp"
         android:text="名字"
         android:textColor="#000"
         android:textSize="16sp" />
@@ -58,7 +62,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="25dp"
-        android:layout_marginRight="114dp"
+        android:layout_marginRight="80dp"
         android:text="电话"
         android:textColor="#000"
         android:textSize="16sp" />

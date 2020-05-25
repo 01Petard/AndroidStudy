@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendListDemo.FriendSortActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RadioGroup
+        android:id="@+id/rg_friend_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_sort_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按ID排序"/>
+        <RadioButton
+            android:id="@+id/rb_sort_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按名字排序"/>
+        <RadioButton
+            android:id="@+id/rb_sort_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按电话号码排序"/>
+        <RadioButton
+            android:id="@+id/rb_sort_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按性别排序"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_friend_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+
+
+
+</LinearLayout>

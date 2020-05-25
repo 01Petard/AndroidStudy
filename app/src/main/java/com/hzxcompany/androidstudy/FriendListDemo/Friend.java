@@ -51,6 +51,8 @@ public class Friend {
 
     public Friend() {
     }
+    public Friend(Friend f) {
+    }
 
     public Friend(String id,String name,String sex,String phone){
         this(R.mipmap.friend_icon,id,name,sex,phone);

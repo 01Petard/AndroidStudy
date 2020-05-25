@@ -1,6 +1,8 @@
 package com.hzxcompany.androidstudy.FriendListDemo;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -17,15 +19,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hzxcompany.androidstudy.R;
 
 import java.lang.reflect.Method;
+import java.text.Collator;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class FriendListTest extends AppCompatActivity {
+    private static final String TAG = "FriendListTest";
     ListView lv;
     FriendAdapter adapter;
     TextView id;//好友编号
@@ -112,6 +119,10 @@ public class FriendListTest extends AppCompatActivity {
                         alertDialog.dismiss();
                     }
                 });
+                break;
+            case R.id.menu_sort:
+                Intent intent = new Intent(FriendListTest.this,FriendSortActivity.class);
+                startActivityForResult(intent,1);
                 break;
             case R.id.menu_log:
                 AlertDialog.Builder builder = new AlertDialog.Builder(FriendListTest.this);
@@ -263,5 +274,57 @@ public class FriendListTest extends AppCompatActivity {
                 break;
         }
         return super.onContextItemSelected(item);
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.i(TAG,"调用了onActivityResult回调方法");
+        switch (requestCode){
+            case 1:
+                Log.i(TAG,"requestCode="+requestCode);
+                if (resultCode == RESULT_OK) {//RESULT_OK=1,RESULT_CANCEL=0
+                    Log.i(TAG,"resultCode="+resultCode);
+                    SharedPreferences sp = getSharedPreferences("mysp",MODE_PRIVATE);
+                    int type = sp.getInt("type",-1);
+                    Comparator<Friend> comparator = null;
+                    switch (type) {
+                        case 1://id排序
+                            comparator = new Sort_id(friends);
+                            Log.i(TAG,"type="+type+",id排序");
+                            Toast.makeText(this, "id排序", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 2://name排序
+                            comparator = new Sort_name(friends);
+                            Log.i(TAG,"type="+type+",name排序");
+                            Toast.makeText(this, "name排序", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 3://phone排序
+                            comparator = new Sort_phone(friends);
+                            Log.i(TAG,"type="+type+",phone排序");
+                            Toast.makeText(this, "phone排序", Toast.LENGTH_SHORT).show();
+                            break;
+                        case 4://sex排序
+                            comparator = new Sort_sex(friends);
+                            Log.i(TAG,"type="+type+",sex排序");
+                            Toast.makeText(this, "sex排序", Toast.LENGTH_SHORT).show();
+                            break;
+                        default:
+                            Log.i(TAG,"未知排序,type="+type);
+                            Toast.makeText(this, "未知排序", Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+                    Collections.sort(biz.getAllFriends(), comparator);
+                    adapter.notifyDataSetChanged();
+                }
+            break;
+            default:
+                Log.i(TAG,"未知错误：requestCode="+requestCode+"，resultCode="+resultCode);
+                break;
+
+        }
+
+
     }
 }

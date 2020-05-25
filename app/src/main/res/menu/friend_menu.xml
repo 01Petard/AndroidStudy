@@ -4,6 +4,10 @@
         android:title="添加"
         android:icon="@drawable/friend_add">
     </item>
+    <item android:id="@+id/menu_sort"
+        android:title="排序"
+        android:icon="@drawable/frieng_sort">
+    </item>
     <item android:id="@+id/menu_log"
         android:title="日志"
         android:icon="@drawable/friend_log">
